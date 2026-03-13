@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>猜数字大挑战</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>猜数字大挑战</h1>
+        <p class="description">我已经想好了一个 1 到 100 之间的数字，你能猜到它是多少吗？</p>
+        
+        <div class="game-area">
+            <input type="number" id="guessInput" min="1" max="100" placeholder="输入 1-100 的数字">
+            <button id="guessButton">猜一下！</button>
+        </div>
+
+        <div id="message" class="message"></div>
+        
+        <div class="stats">
+            <p>剩余机会: <span id="attemptsLeft">10</span></p>
+            <p>已猜次数: <span id="guessCount">0</span></p>
+        </div>
+
+        <button id="restartButton" class="hidden">重新开始</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
